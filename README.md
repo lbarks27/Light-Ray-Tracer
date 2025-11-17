@@ -36,4 +36,3 @@ What is implemented
 Goals
 ------------------
 - Add surfaces / interfaces with Snell's law.
-- Add a visualization of the refractive-index field in the plot. 

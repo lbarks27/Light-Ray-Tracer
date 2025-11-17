@@ -9,8 +9,8 @@ def main():
     # Create a field: background 1.0 with a Gaussian bump at origin
     field = RefractiveIndexField(
         n0=1.0,
-        gaussians=[{"amplitude": 1.0, "center": np.array([0.0, 0.0, 0.0]), "sigma": 0.6}],
-        linear_grad=np.array([0.0, 0.0, 0.6]),
+        gaussians=[{"amplitude": 10.0, "center": np.array([0.0, 0.0, 0.0]), "sigma": 0.6}],
+        linear_grad=np.array([0.0, 0.0, 0.0]),
     )
 
     fig = plt.figure(figsize=(10, 7))
@@ -52,7 +52,7 @@ def main():
     for o in origins:
         traj = integrate_ray(
             o,
-            np.array([0.0, 1.0, 0.0]),
+            np.array([1.0, 1.0, 1.0]),
             field,
             ds=0.02,
             steps=600,

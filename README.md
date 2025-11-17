@@ -30,9 +30,10 @@ What is implemented
 
 - `RefractiveIndexField` with background `n0`, optional Gaussian perturbations, and optional linear gradient.
 - RK4 integrator for the ray equations using the formulation d/ds(n dr/ds) = grad n (implemented as first-order system in (r, p)).
+- Adaptive ray integration with automatic step control plus optional stopping conditions (domain bounds and arbitrary user-specified surfaces).
 - `run_demo.py` to visualize rays through a Gaussian bump in `n`.
 
 Goals
 ------------------
-- Add adaptive stepping and stopping conditions (e.g., when rays leave domain or reach surfaces).
 - Add surfaces / interfaces with Snell's law.
+- Add a visualization of the refractive-index field in the plot. 
